@@ -5,7 +5,7 @@ pipeline {
         stage('Build and Run Server-side') {
             steps {
                 dir('server-side') {
-                    sh './script_in_server_side.sh'
+                    sh './runScript.sh'
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Build Client-side') {
             steps {
                 dir('client-side') {
-                    sh './script_in_client_side.sh'
+                    sh './runScript.sh'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
         stage('Validation') {
             steps {
                 dir('validation') {
-                    sh './script_in_validation.sh'
+                    sh './validate.sh'
                 }
             }
         }
