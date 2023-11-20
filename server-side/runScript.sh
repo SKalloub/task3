@@ -1,4 +1,4 @@
-docker build -t server-side .
+docker build -t sk1412/server-side .
 if [ "$(docker ps -q -f name="serverside")" ]; then
  docker stop serverside
  docker rm serverside
