@@ -28,8 +28,8 @@ pipeline {
         stage ('Pushing To Docker Hub') {
                steps {
                sh 'docker login --username sk1412 --password CodeNameSherry4869@' 
-               sh 'docker push sk1412/client-side sk1412/client-side'
-               sh 'docker push sk1412/server-side sk1412/server-side'     
+               sh 'docker push sk1412/client-side'
+               sh 'docker push sk1412/server-side'     
                }
                }
    }
